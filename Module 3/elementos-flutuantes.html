@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Flutuantes</title>
+
+    <style type="text/css">
+
+        #principal{
+            border: 5px solid red;
+            background: green;
+        }
+
+        .conteudo {
+            background: blue;
+            border: 1px solid gray;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            float: right;
+        }
+
+        /*.conteudo1 {
+            background: red;
+            border: 1px solid gray;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            float: left;
+        }*/
+
+        .conteudo-zero {
+            background: red;
+            border: 1px solid gray;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="principal">
+        <div class="conteudo">
+            Conteúdo 1
+        </div>
+
+        <div class="conteudo">
+            Conteúdo 2
+        </div>
+
+        <div class="conteudo">
+            Conteúdo 3
+        </div>
+
+        <!--
+        <div class="clear">teste</div>
+        -->
+
+        <p class="clear">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend, nisi at efficitur dapibus, arcu ante congue ligula, sed rhoncus velit nibh id turpis. Curabitur nec dapibus sapien, nec tincidunt massa. Praesent metus nunc, dignissim porttitor nisi et, pharetra elementum ligula. Nam eu orci et ipsum commodo tincidunt nec et dui. Morbi vel mollis arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit lectus in scelerisque placerat. Vestibulum scelerisque magna eget lacus pharetra rhoncus. Aenean nec mauris vitae mauris vestibulum auctor in ut lorem. Sed tempor molestie urna fermentum iaculis. Duis risus augue, tincidunt sit amet ultrices sed, hendrerit sit amet dolor.
+        </p>
+        
+    </div>
+
+    
+
+</body>
+</html>
