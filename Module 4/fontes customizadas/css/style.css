@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Bring Heart";
+    src: url(../fontes/BringHeart.woff);
+}
+
+@font-face {
+    font-family: Ancient;
+    src: url(../fontes/Ancient-Medium.woff);
+}
+
+h1 {
+    font-size: 6em;
+    font-family: "Bring Heart";
+}
+
+h2 {
+    font-size: 6em;
+    font-family: Ancient;
+}

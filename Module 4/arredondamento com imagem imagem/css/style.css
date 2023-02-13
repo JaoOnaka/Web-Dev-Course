@@ -1,0 +1,43 @@
+/*
+PRIMEIRO EXEMPLO
+*/
+/*
+.caixa {
+    width: 400px;
+    background: #DEDEDE url(../img/topo2.png) no-repeat left top;
+}
+
+.caixa h2 {
+    padding: 10px 20px 0px 20px;
+}
+
+.caixa p {
+    padding: 0px 20px 20px 20px;
+    background: url(../img/baixo2.png) no-repeat left bottom;
+}
+*/
+
+/*
+SEGUNDO EXEMPLO
+*/
+.caixa {
+    width: 400px;
+    background: #DEDEDE url(../img/fundo-arredondamento.png) repeat-y;
+}
+
+.caixa h2 {
+    padding: 10px 20px 0px 20px;
+    background: url(../img/topo2.png) no-repeat left top
+}
+
+.caixa p {
+    padding: 0px 20px;
+    margin-bottom: 0px;
+}
+
+.ultimo {
+    /*padding-bottom: 20px;*/
+    background: url(../img/baixo2.png) no-repeat left bottom;
+    width: 400px;
+    height: 24px;
+}

@@ -1,0 +1,69 @@
+/********
+Layouts */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #F2F2F2;
+}
+
+#container {
+    width: 85%; /*720px*/
+    margin: 0 auto;
+    background: #FFF;
+    min-width: 720px;
+    max-width: 1280px;
+}
+
+#marca {
+    width: 100%;
+    height: 100px;
+    background: #9E9E9E;
+    text-align: center;
+    line-height: 100px;   
+}
+
+#conteudo {
+    width: 75%;
+    float: right;
+}
+
+#conteudo-principal {
+    width: 64%;
+    float: left;
+}
+
+#conteudo-secundario {
+    width: 34%;
+    float: right;
+    background: #D1D1D1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navegacao {
+    width: 23%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #D1D1D1;
+}
+
+#navegacao ul {
+    list-style: none;
+}
+
+#navegacao li a {
+    text-decoration: none;
+}
+
+#rodape {
+    clear: both;
+    background: #C4C4C4;
+    padding: 5px;
+}
