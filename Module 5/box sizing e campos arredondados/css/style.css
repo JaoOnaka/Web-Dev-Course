@@ -1,0 +1,29 @@
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: #B9C941;
+    /*padding: 10px;
+    margin: 10px;
+    -webkit-border-radius: 10px 50px 80px 100px;
+    -moz-border-radius: 10px 50px 80px 100px;
+    border-radius: 10px 50px 80px 100px;*/
+    padding: 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#caixa2 {
+    width: 400px;
+    height: 300px;
+    background: #B9C941;
+    /*padding: 10px;
+    margin: 10px;
+    -webkit-border-radius: 10px 50px 80px 100px;
+    -moz-border-radius: 10px 50px 80px 100px;
+    border-radius: 10px 50px 80px 100px;*/
+}
+
+.arredondamento {
+    border-radius: 150px;
+}
