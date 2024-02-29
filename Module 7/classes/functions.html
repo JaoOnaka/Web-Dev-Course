@@ -6,16 +6,26 @@
     <title>Javascript</title>
 
     <script>
-        // document.write("O terreno possui " + calcularAreaTerreno(15, 25) + " metros quadrados")
-        var area  = calcularAreaTerreno(prompt("Terrain width (meters):"), prompt("Terrain length (meters):"))
-        document.write("The terrain has " + area + " square meters")
+        // // document.write("O terreno possui " + calcularAreaTerreno(15, 25) + " metros quadrados")
+        // var area  = calcularAreaTerreno(prompt("Terrain width (meters):"), prompt("Terrain length (meters):"))
+        // document.write("The terrain has " + area + " square meters")
 
-        function calcularAreaTerreno (largura, comprimento) {
-            var area = largura * comprimento
+        // function calcularAreaTerreno (largura, comprimento) {
+        //     var area = largura * comprimento
 
-            // document.write("O terreno possui " + area + " metros quadrados")
-            return area
+        //     // document.write("O terreno possui " + area + " metros quadrados")
+        //     return area
+        // }
+
+        function soma(a, b) {
+            // b = b === undefined ? 0 : b
+            return a + b
         }
+
+        console.log(soma(7, 7))
+        console.log(soma(4, 6, 10, 16)) // ignores excess values
+        console.log(soma(2))            // 2 + undefined = not a number
+        console.log(soma())            // undefined + undefined = not a number
 
     </script>
 </head>
