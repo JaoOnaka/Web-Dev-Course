@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+
+        // 3 scopes: global, function, block
+
+        var serie = "Breaking bad"
+
+        // block scope
+        if(true) {
+            var serie2 = "The boys"
+            document.write(serie)
+        }
+
+        document.write(serie2)
+
+        document.write("<br/>")
+
+        function x() {
+            var serie3 = "The walking dead"
+            document.write(serie)
+            document.write(serie2)
+        }
+
+        x()
+
+        document.write("<br/>")
+        document.write(serie3)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
