@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+
+        function showArticle(id, callbackSuccess, callbackError) {
+            // recover id via http request
+            if(true) {
+                callbackSuccess("Callback functions in JS", "Callback functions are...")
+            } else {
+                callbackError("Error retrieving data")
+            }
+        }
+
+        var callbackSuccess = function (title, description) {
+            document.write("<h1>" + title + "</h1>")
+            document.write("<hr/>")
+            document.write("<p>" + description + "</p>")
+        }
+
+        var callbackError = function (error) {
+            document.write("<p><b>Error:</b> " + error + "</p>")
+        }
+
+        showArticle(1, callbackSuccess, callbackError)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
