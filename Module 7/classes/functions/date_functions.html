@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+
+        var date = new Date()
+
+        // document.write(date.getDate())
+        // document.write(date.getMonth())
+        // document.write(date.getFullYear())
+        // document.write("<br/>" + date.getDate() + "/" + date.getMonth() + "/" + date.getFullYear())
+
+
+
+        // document.write(date.toString())
+
+        // date.setDate(date.getDate() + 942)
+        // document.write("<hr/>")
+        // document.write(date.toString())
+
+        // date.setMonth(date.getMonth() + 942)
+        // document.write("<hr/>")
+        // document.write(date.toString())
+
+        // date.setYear(date.getFullYear() + 942)
+        // document.write("<hr/>")
+        // document.write(date.toString())
+
+
+        // 16/01/2019
+        var date1 = new Date(2019, 0, 16)
+
+        // 23/04/2019
+        var date2 = new Date(2019, 3, 23)
+
+        document.write(date1.toString())
+        document.write("<hr/>")
+        document.write(date2.toString())
+
+        document.write("<br/><br/><br/>")
+
+        document.write(date1.getTime())
+        document.write("<hr/>")
+        document.write(date2.getTime())
+
+        // 1 january 1970
+        document.write("<br/><br/><hr/>")
+        // find milliseconds quantity between date1 and date2
+        var millisecondsBetweenDates = Math.abs(date1.getTime() - date2.getTime())
+        document.write(millisecondsBetweenDates)
+
+        // 1 day = 24 hours // 1 hour = 60 minutes // 1 minute = 60 seconds // 1 second = 1000 milliseconds
+        // so how many milliseconds are there in a day?
+        var millisecondsPerDay = 1*24*60*60*1000
+        document.write(" 1 day = " + (millisecondsPerDay) + " milliseconds")
+        document.write("<br/><br/><hr/>")
+        document.write("The difference between date1 and date2 is = " + Math.ceil(millisecondsBetweenDates / millisecondsPerDay))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
