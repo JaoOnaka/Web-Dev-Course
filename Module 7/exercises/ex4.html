@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    
+    <script>
+
+        function activeField() {
+            document.getElementById("field").style.backgroundColor = "yellow"
+        }
+
+        function validateField() {
+            if(document.getElementById("field").value.length < 3) {
+                document.getElementById("field").style.backgroundColor = "red"
+            } else {
+                document.getElementById("field").style.backgroundColor = "green"
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+    <input type="text" onfocus="activeField()" onblur="validateField()" id="field">
+
+</body>
+</html>
