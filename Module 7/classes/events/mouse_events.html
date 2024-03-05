@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+        function action1() {
+            alert("Event click")
+        }
+        function action2() {
+            alert("Mouse cursor left the element region")
+        }
+    </script>
+</head>
+<body>
+    
+    <!-- <div onclick="action()" style="background: #CCC; height: 150px; width: 150px"></div> -->
+    <!-- <div ondblclick="action()" style="background: #CCC; height: 150px; width: 150px"></div> -->
+    <!-- <div onmouseup="action()" style="background: #CCC; height: 150px; width: 150px"></div> -->
+    <!-- <div onmousedown="action()" style="background: #CCC; height: 150px; width: 150px"></div> -->
+    <!-- <div onmouseover="action()" style="background: #CCC; height: 150px; width: 150px"></div> -->
+    <!-- <div onmouseout="action()" style="background: #CCC; height: 150px; width: 150px"></div> -->
+
+    <div onclick="action1()" onmouseout="action2()" style="background: #CCC; height: 150px; width: 150px"></div>
+
+</body>
+</html>
