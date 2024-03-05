@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+        var x = parseFloat(prompt("Digite um número: "))
+        var op = prompt("Digite 'soma' ou 'subtração': ")
+        var y = parseFloat(prompt("Digite outro número: "))
+    
+        function calc (x, y, op) {
+            if (op == "soma") {
+                return x + y
+            } else if  (op == "subtração") {
+                return x - y
+            }
+        }
+
+        document.write("O resultado é: " + calc(x, y, op))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
