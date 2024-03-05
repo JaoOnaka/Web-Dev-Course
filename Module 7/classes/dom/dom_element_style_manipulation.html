@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+        function changeStyle(bgColor, w, h) {
+            document.getElementById("square").style.background = bgColor
+            document.getElementById("square").style.width = w
+            document.getElementById("square").style.height = h
+        }
+    </script>
+</head>
+<body>
+    
+    <h3>Style manipulation</h3>
+
+    <button type="button" onclick="changeStyle('#FF0000', '200px')">Red</button>
+    <button type="button" onclick="changeStyle('#00FF00', '150px', '100px')">Green</button>
+    <button type="button" onclick="changeStyle('#0000FF', '150px', '200px')">Blue</button>
+
+    <hr>
+    <div style="border: solid 1px #000; width: 100px; height: 100px;" id="square">
+
+    </div>
+
+</body>
+</html>

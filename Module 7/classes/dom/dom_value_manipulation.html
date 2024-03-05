@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+        function sendChar() {
+            var char = document.getElementById("input").value
+
+            document.getElementById("input").value = ""
+
+            char.trim()
+
+            switch(char) {
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    document.getElementById("only_numbers").value = char
+                    break;
+                default:
+                    document.getElementById("only_letters").value = char
+            }
+        }
+    </script>
+</head>
+<body>
+    <input
+        type="text"
+        placeholder="Type a character here: "
+        onkeyup="sendChar()"
+        id="input"
+    >
+
+    <hr>
+    <span>Letters:</span>
+    <input type="text" disabled="disabled" id="only_letters">
+
+    <span>Numbers:</span>
+    <input type="text" disabled="disabled" id="only_numbers">
+</body>
+</html>
