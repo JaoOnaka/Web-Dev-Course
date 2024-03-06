@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+
+        var objects = Array("Chair", "Printer", "Fork")
+
+        function addObject() {
+            var objectName = document.getElementById('object').value
+            if(objectName === "") {
+                alert("Write a valid value")
+            } else {
+                if(objects.indexOf(objectName) !== -1){
+                    alert("This object already exists")
+                }else{
+                    objects.push(objectName)
+                    document.getElementById("object").value = ""
+                    console.log(objects)
+                }
+            }
+        }
+
+        function sortObjects() {
+            objects.sort();
+            console.log(objects)
+        }
+
+    </script>
+</head>
+<body>
+    
+    <input id="object" type="text">
+    <button onclick="addObject()">Add</button>
+    <button onclick="sortObjects()">Sort</button>
+
+</body>
+</html>
