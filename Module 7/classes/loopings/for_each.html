@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+
+        // var employeesList = ["John Doe", "Jane Smith", "Mike Johnson", "Sara Connor", "Tom Davis"];
+        var employeesList = Array()
+        employeesList['x'] = "John Doe"
+        employeesList[false] = "Jane Smith"
+        employeesList[3] = "Mike Johnson"
+        employeesList[27] = "Sara Connor"
+        employeesList[-12] = "Tom Davis"
+
+        /*
+        console.log(employeesList)
+        document.write(employeesList[3])
+
+        employeesList.forEach(function(value, index, array) {
+            console.log("Index: " + index + " | value: " + value)
+
+            if(value == "Sara Connor") {
+                array[index] = "New name"
+            }
+        })
+        
+        console.log(employeesList)
+        document.write(employeesList[3])
+        */
+
+        var f = function(value, index) {
+            console.log(value, index)
+        }
+
+        employeesList.forEach(f)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

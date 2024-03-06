@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+
+        var guestList = ["Maria", "Roberto", "Lourdes", "Ana", "Mario"]
+        guestList["a"] = "TEST"
+        guestList[-4] = "NEGTEST"
+        guestList[true] = "BOOLTEST"
+
+        console.log(guestList)
+
+        for(var x in guestList) {
+            console.log("Index: " + x + " Value: " + guestList[x])
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
