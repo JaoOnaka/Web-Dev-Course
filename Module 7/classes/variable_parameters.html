@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+        // // document.write("The terrain has " + calculateTerrainArea(15, 25) + " square meters")
+        // var area  = calculateTerrainArea(prompt("Terrain width (meters):"), prompt("Terrain length (meters):"))
+        // document.write("The terrain has " + area + " square meters")
+
+        // function calculateTerrainArea (width, length) {
+        //     var area = width * length
+
+        //     // document.write("The terrain has " + area + " square meters")
+        //     return area
+        // }
+
+        function sum() {
+            var result = 0
+            for(var i in arguments) {
+                result += arguments[i]
+            }
+            return result
+        }
+
+        console.log(sum(7, 5, 3.2, 0.8, "text"))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
