@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+        
+        var windowA
+
+        function openPopUp() {
+            windowA = window.open("", "new window", "width=200, height=100")
+        }
+
+        function closePopUp() {
+            windowA.close()
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="openPopUp()">Open window</button>
+    <button onclick="closePopUp()">Close window</button>
+    <button onclick="window.print()">Print window</button>
+</body>
+</html>
