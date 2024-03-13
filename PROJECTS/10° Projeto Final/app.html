@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
+
+</head>
+<body onresize="adjustGameSize()">
+
+    <div class="panel">
+        <div class="hearts">
+            <img id="l1" src="img/full_heart.png">
+            <img id="l2" src="img/full_heart.png">
+            <img id="l3" src="img/full_heart.png">
+        </div>
+        <div class="timer">
+            Time remaining: <span id="timer"></span>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById( "timer" ).innerHTML = time
+
+        var genFly = setInterval(function() {
+            randomPos()
+        }, genFlyTime)
+    </script>
+
+</body>
+</html>
