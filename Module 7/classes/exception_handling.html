@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+        
+        var video = Array()
+
+        video[1] = Array()
+        video[1]["name"] = "Shingeki no Kyogin"
+        video[1]["category"] = "Anime"
+
+        function getVideo(video) {
+            try{
+                console.log(video[0]["name"])
+            } catch(error) {
+                exceptionHandle(error)
+                console.log("We can handle it now")
+                throw new Error("ERROR! We're working on it.")
+            } finally {
+                console.log("Always happens (try / catch)")
+            }
+            
+            console.log("The application didn't die")
+        }
+
+        function exceptionHandle(e) {
+            console.log(e)
+        }
+
+        getVideo(video)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
