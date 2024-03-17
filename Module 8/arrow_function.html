@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+    
+        // let square = function(x = 5) {
+        //     return x * x
+        // }
+
+        // let square = x => {
+        //     return x * x
+        // }
+
+        // let square = (x) => {
+        //     return x * x
+        // }
+
+        // let square = x => x * x
+
+
+        // document.write(square(10))
+
+        // --------------------------------
+
+        // let oddOrEven = function(num) {
+        //     if(num % 2 === 0) {
+        //         return "even"
+        //     } else {
+        //         return "odd"
+        //     }
+        // }
+
+        // document.write(oddOrEven(7))
+
+        // --------------------------------
+
+        // let oddOrEven = num => {
+        //     if(num % 2 === 0) {
+        //         return "even"
+        //     } else {
+        //         return "odd"
+        //     }
+        // }
+
+        // --------------------------------
+
+        let oddOrEven = num => num % 2 === 0 ? "even" : "odd"
+
+        document.write(oddOrEven(7))
+
+    </script>
+</head>
+<body>
+
+    <div id="output"></div>
+
+</body>
+</html>
