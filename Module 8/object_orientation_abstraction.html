@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+    
+        // object model
+        class BankAccount {
+            constructor() {
+                this.agency = 1075
+                this.accountNumber = 8351125
+                this.balance = 50
+                this.limit = 450
+            }
+
+            deposit(depositValue) {
+                this.balance += depositValue
+            }
+
+            withdraw(withdrawValue) {
+                this.balance -= withdrawValue
+            }
+
+            checkBalance() {
+                return this.balance
+            }
+        }
+
+        let x = new BankAccount()
+        let y = new BankAccount()
+
+        console.log(x.checkBalance())
+        x.deposit(510)
+        console.log(x.checkBalance())
+        x.withdraw(200)
+        console.log(x.checkBalance())
+
+        console.log(y.checkBalance())
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
