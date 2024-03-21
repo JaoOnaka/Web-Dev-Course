@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        // let Car = function() {
+        //     this.color = "black"
+        //     this.model = "dodge challenger"
+        //     this.actualSpeed = 0
+        //     this.maxSpeed = 200
+
+        //     this.accelerate = function() {
+        //         let speed = this.getActualSpeed() + 50
+        //         if(speed > this.maxSpeed) {
+        //             speed = this.maxSpeed
+        //         }
+        //         this.setActualSpeed(speed)
+        //     }
+
+        //     this.getActualSpeed = function() {
+        //         return this.actualSpeed
+        //     }
+
+        //     this.setActualSpeed = function(actualSpeed) {
+        //         this.actualSpeed = actualSpeed
+        //     }
+        // }
+
+        // let car = new Car()
+        // console.log(car.actualSpeed)
+        // car.accelerate()
+        // console.log(car.actualSpeed)
+        // car.accelerate()
+        // console.log(car.actualSpeed)
+        // car.accelerate()
+        // console.log(car.actualSpeed)
+        // car.accelerate()
+        // console.log(car.actualSpeed)
+        // car.accelerate()
+        // console.log(car.actualSpeed)
+        // car.maxSpeed = 350
+        // car.accelerate()
+        // console.log(car.actualSpeed)
+
+        let Car2 = function() {
+            var maxSpeed = 200
+            var kilometersDriven = 0
+           
+            this.color = "black"
+            this.model = "dodge challenger"
+            this.actualSpeed = 0
+            
+            this.accelerate = function() {
+                let speed = this.getActualSpeed() + 50
+                if(speed > maxSpeed) {
+                    speed = maxSpeed
+                }
+                this.setActualSpeed(speed)
+                
+                setKilometersDriven(0.07)
+                console.log(kilometersDriven)
+            }
+
+            this.getActualSpeed = function() {
+                return this.actualSpeed
+            }
+
+            this.setActualSpeed = function(actualSpeed) {
+                this.actualSpeed = actualSpeed
+            }
+
+            var setKilometersDriven = function(q) {
+                kilometersDriven += q
+            }
+        }
+
+        let car2 = new Car2()
+        console.log(car2.actualSpeed)
+        car2.accelerate()
+        console.log(car2.actualSpeed)
+        car2.accelerate()
+        console.log(car2.actualSpeed)
+        car2.accelerate()
+        console.log(car2.actualSpeed)
+        car2.accelerate()
+        console.log(car2.actualSpeed)
+        car2.accelerate()
+        console.log(car2.actualSpeed)
+        // car2.maxSpeed = 350
+        car2.accelerate()
+        console.log(car2.actualSpeed)
+
+        console.log(car2)
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
