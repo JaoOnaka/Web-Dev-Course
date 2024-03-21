@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        class Animal {
+            constructor() {
+                this.color = ""
+                this.size = null
+                this.weight = null
+            }
+
+            sleep() {
+                console.log("slept")
+            }
+        }
+
+        class Dog extends Animal {
+            constructor() {
+                // this.color = "black and brown"
+                // this.size = 30
+                super()
+                this.ears = "big and lop ears"
+            }
+
+            run() {
+                console.log("ran")
+            }
+
+            // sleep() {
+            //     console.log("slept")
+            // }
+
+            growl() {
+                console.log("growled")
+            }
+        }
+
+        class Bird extends Animal {
+            constructor() {
+                // this.color = "white and brown"
+                // this.size = 10
+                super()
+                this.beak = "short"
+            }
+
+            fly() {
+                console.log("flew")
+            }
+
+            // sleep() {
+            //     console.log("slept")
+            // }
+        }
+
+        class Parrot extends Bird {
+            constructor() {
+                // this.color = "green"
+                // this.size = 20
+                // this.beak = "medium"
+                super()
+                this.speaks = true
+            }
+
+            speak() {
+                console.log("spoke")
+            }
+        }
+
+        let dog = new Dog()
+        let bird = new Bird()
+        let parrot = new Parrot()
+
+        console.log(dog)
+        console.log(bird)
+        console.log(parrot)
+
+        dog.sleep()
+        bird.sleep()
+        parrot.speak()
+        parrot.sleep()
+        parrot.fly()
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
