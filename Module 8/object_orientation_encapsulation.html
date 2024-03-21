@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+    
+        class TV {
+            constructor() {
+                this._channels = Array(2, 4, 5, 7, 10)
+                this._activeChannel = 5
+                this._volume = 5
+            }
+            
+            // getters and setters
+            get activeChannel() {
+                return this._activeChannel
+            }
+
+            set activeChannel(channel) {
+                if(this._channels.indexOf(channel) !== -1) {
+                    this._activeChannel = channel
+                }
+                
+            }
+        }
+
+        let tv = new TV()
+        tv.activeChannel = 7
+        console.log(tv.activeChannel)
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
