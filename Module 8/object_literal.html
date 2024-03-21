@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        class Product {
+            constructor(description, price) {
+                this.description = description
+                this.price = price
+            }
+
+            seeDescription() {
+                console.log(`${this.description} only ${this.price}`)
+            }
+        }
+
+        let product = new Product("notebook", 1500)
+        product.seeDescription()
+
+        let literalProduct = {
+            description: "refrigerator",
+            price: 1900,
+            seeDescription: function() {
+                console.log(`${this.description} only ${this.price}`)
+            }
+        }
+
+        literalProduct.seeDescription()
+
+        /*
+            form -> server
+                data recovery and build an object literal
+                    obj literal -> JSON -> HTTP -> server -> store
+        */
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
