@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        let subscription = {
+            customerId: 1000,
+            description: "Internet access",
+            status() {
+                console.log("active")
+            }
+        }
+
+        console.log(subscription.description)
+
+        let y = subscription
+        
+        console.log(y.description)
+
+        y.description = "Internet + TV + phone"
+
+        console.log(subscription.description)
+        console.log(y.description)
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
