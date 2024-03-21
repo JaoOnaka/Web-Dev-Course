@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        let Car = function() {
+            this.color = "black"
+            this.model = "dodge challenger"
+            this.actualSpeed = 0
+            this.maxSpeed = 200
+
+            this.accelerate = function() {
+                // this.actualSpeed += 10
+
+                let speed = this.getActualSpeed() + 10
+                this.setActualSpeed(speed)
+            }
+
+            this.getActualSpeed = function() {
+                return this.actualSpeed
+            }
+
+            this.setActualSpeed = function(actualSpeed) {
+                this.actualSpeed = actualSpeed
+            }
+        }
+
+        let car = new Car()
+
+        console.log(`Actual speed: ${car.getActualSpeed()}`)
+        car.accelerate()
+        console.log(`Actual speed: ${car.getActualSpeed()}`)
+        car.accelerate()
+        console.log(`Actual speed: ${car.getActualSpeed()}`)
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
