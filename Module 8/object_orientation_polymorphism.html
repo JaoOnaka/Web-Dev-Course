@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        class Animal {
+            constructor(color, size, weight) {
+                this.color = color
+                this.size = size
+                this.weight = weight
+            }
+
+            sleep() {
+                console.log("slept")
+            }
+        }
+
+        class Bird extends Animal {
+            constructor(beak, color, size, weight) {
+                super(color, size, weight)
+                this.beak = beak
+            }
+
+            fly() {
+                console.log("flew")
+            }
+        }
+
+        class Parrot extends Bird {
+            constructor(speaks, color, size, weight) {
+                super("medium", color, size, weight)
+                this.speaks = speaks
+            }
+
+            speak() {
+                console.log("spoke")
+            }
+        }
+
+        class Ostrich extends Bird {
+            constructor () {
+                super("big", "black and white", 250, 15000)
+            }
+
+            buryHead () {
+                console.log("buried")
+            }
+
+            // OVERWRITE
+            fly () {
+                console.log("Ostriches don't fly!")
+            }
+        }
+
+        let parrot = new Parrot(true, "green", 25, 350)
+        console.log(parrot)
+
+        parrot.fly()
+
+        let ostrich = new Ostrich()
+        ostrich.buryHead()
+        // ostriches don't fly
+        ostrich.fly()
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
