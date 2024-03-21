@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+    
+    //    let chairs = Array()
+
+    //     chairs[0] = Array()
+    //     chairs[0]["legsQuantity"] = 4
+    //     chairs[0]["swivel"] = false
+    //     chairs[0]["color"] = "blue"
+        
+    //     chairs[1] = Array()
+    //     chairs[1]["legsQuantity"] = 1
+    //     chairs[1]["swivel"] = true
+    //     chairs[1]["color"] = "red"
+
+    //     function spinChair(index) {
+    //         if(chairs[index]["swivel"] === true) {
+    //             console.log("succeed, it's a swivel chair")
+    //         } else {
+    //             console.log("fail, it isn't a swivel chair")
+    //         }
+    //     }
+
+    //     function addChair(legsQuantity, swivel, color) {
+    //         let chair = Array()
+
+    //         chair["legsQuantity"] = legsQuantity
+    //         chair["swivel"] = swivel
+    //         chair["color"] = color
+
+    //         chairs.push(chair)
+    //     }
+
+    //     addChair(3, false, "green")
+
+    //     spinChair(1)
+
+    //     console.log(chairs)
+
+        class Chair {
+            constructor(legsQuantity, swivel, color) {
+                this.legsQuantity = legsQuantity
+                this.swivel = swivel
+                this.color = color
+            }
+
+            spinChair() {
+                if(this.swivel == true) {
+                    console.log("succeed")
+                } else {
+                    console.log("fail, it's not a swivel chair")
+                }
+            }
+        }
+    
+        // let chair = new Chair(4, false, "blue")
+        // let chair2 = new Chair(1, true, "black")
+
+        let chairs = Array()
+
+        chairs.push(new Chair(4, false, "blue"))
+        chairs.push(new Chair(1, true, "black"))
+
+        console.log(chairs)
+        // chair.spinChair()
+        // chair2.spinChair()
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
