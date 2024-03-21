@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        let name = "Joao"
+        let age = 21
+        let gender = "male"
+        let occupation = "developer"
+
+        let object = {
+            name: name,
+            age: age,
+            gender: gender,
+            occupation: occupation,
+            showSummary: function() {
+                console.log(`${this.name}, ${this.age} years old, ${this.gender}, is ${this.occupation}`)
+            },
+        }
+
+        console.log(object)
+        object.showSummary()
+
+        let object2 = {
+            // name = var name /-/ value = var value
+            testName: name,
+            age,
+            gender,
+            occupation,
+            showSummary() {
+                console.log(`${this.testName}, ${this.age} years old, ${this.gender}, is ${this.occupation}`)
+            },
+        }
+
+        console.log(object2)
+        object2.showSummary()
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
