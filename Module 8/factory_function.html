@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        let Bicycle1 = {
+            color: "white",
+            gear: "single",
+            rim: 12,
+            pedal() {
+                console.log("pedal method")
+            }
+        }
+        
+        let Bicycle2 = {
+            color: "black",
+            gear: "18",
+            rim: 26,
+            pedal() {
+                console.log("pedal2 method")
+            }
+        }
+
+        console.log(Bicycle1)
+        console.log(Bicycle2)
+
+        let BicycleFactory = function(color, gear, rim) {
+            return {
+                color,
+                gear,
+                rim,
+                pedal() {console.log("pedal method")}
+            }
+        }
+
+        let Bicycle3 = BicycleFactory("red", "18", 26)
+        console.log(Bicycle3)
+        console.log(Bicycle3.color)
+        console.log(Bicycle3.gear)
+        Bicycle3.pedal()
+
+        let Bicycle4 = BicycleFactory("black", "21", 29)
+        console.log(Bicycle4)
+    </script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>
