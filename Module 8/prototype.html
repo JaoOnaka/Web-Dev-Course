@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        let a1 = {
+            color: "white",
+            model: "airbus a380",
+            takeOff: function() {console.log("taking off")}
+        }
+
+        let planeF = function() {
+            this.color = "blue",
+            this.model = "boeing 787",
+            this.takeOff = function() {console.log("taking off")}
+        }
+        let a2 = new planeF()
+
+        class planeC {
+            constructor() {
+                this.color = "black",
+                this.model = "embraer e-jets"
+            }
+            
+            takeOff() {
+                console.log("taking off")
+            }
+        }
+        let a3 = new planeC();
+
+        console.log(a1)
+        console.log(a2)
+        console.log(a3)
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
