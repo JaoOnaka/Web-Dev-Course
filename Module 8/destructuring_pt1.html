@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        let fruits = ["pineapple", "grapes", "pear", "papaya"]
+
+        // let a = frutas[0]
+        // let b = fruits[1]
+        // let c = fruits[2]
+
+        // let  [a, b] = fruits;
+        // let  [a, b, ,c] = fruits;
+        // let  [a, b, ...c] = fruits;
+        let [a, b = "avocado", c, d, e = "banana"] = fruits // default = banana
+
+        console.log(a, b, c, d, e)
+
+        let stuff = [["pineapple", "grapes", "pear", "papaya"], ["John", "Mary"]]
+        let [,[,n2]] = stuff
+        let [[,,n3]] = stuff
+
+        console.log(n2)
+        console.log(n3)
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
