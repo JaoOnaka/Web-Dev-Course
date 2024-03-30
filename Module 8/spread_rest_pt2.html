@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        function sum(...param) {
+            let result = 0
+
+            console.log(param)
+
+            param.forEach(v => result += v)
+
+            return result
+        }
+
+        console.log(sum(3, 8, 5, 7, -1, 102))
+
+        function product(m, ...p) {
+            console.log(m)
+            let result = 0
+            console.log(p)
+
+            p.forEach(v => result += m * v)
+
+            return result
+        }
+
+        console.log(product(5, 7, 12, 3, 49))
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>
